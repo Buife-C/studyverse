@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyVerse - Game: Outer Planets</title>
+    <link rel="stylesheet" href="css/game2.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
+  <body>
+    <section class="game-page">
+      <h1 class="page-heading">Game: Outer Planets</h1>
+
+      <div class="game-container" id="gameContainer">
+        <!-- Top bar -->
+        <div class="game-topbar">
+          <button class="fullscreen-btn" onclick="toggleFullscreen()">Play Full Screen</button>
+        </div>
+
+        <!-- Game area -->
+        <div class="game-area">
+          <h2 class="game-title">Planet Size Challenge</h2>
+          <p class="game-subtitle">
+            Can you rank the planets from smallest to largest?
+            Drag and drop them in the right boxes
+          </p>
+
+          <!-- Draggable planet bank -->
+          <div class="planets-row" id="planetsRow"></div>
+
+          <!-- Drop zones (no sun for this one) -->
+          <div class="dropzones" id="dropzones"></div>
+        </div>
+      </div>
+
+      <!-- Shown only when game is won -->
+      <a href="congrats2.html" class="continue-btn" id="continueBtn">Continue</a>
+    </section>
+
+    <script src="js/progress.js"></script>
+    <script src="js/game2.js"></script>
+  </body>
+</html>
